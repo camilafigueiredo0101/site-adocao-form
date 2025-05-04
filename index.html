@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoção de Animais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Adote um Amigo</h1>
+        <p>Conheça os animais disponíveis para adoção e transforme a vida de um pet!</p>
+    </header>
+
+    <section class="gallery">
+        <div class="pet-card">
+            <img src="img/img1.jpeg" alt="Gatinho">
+            <h3>Nome: Bolinha</h3>
+            <p>Raça: Malhado</p>
+            <p>Idade: 7 meses</p>
+            <button onclick="adotar('Bolinha')">Quero Adotar</button>
+            <button class="interest-btn">Tenho interesse</button>
+
+        </div>
+        <div class="pet-card">
+            <img src="img/img2.jpeg" alt="Cachorrinho">
+            <h3>Nome: Rex e Ted</h3>
+            <p>Raça: Vira-Lata</p>
+            <p>Idade: 6 meses</p>
+            <button onclick="adotar('Rex')">Quero Adotar</button>
+            <button class="interest-btn">Tenho interesse</button>
+
+        </div>
+        <div class="pet-card">
+            <img src="img/img3.jpeg" alt="Gatinho">
+            <h3>Nome: Mimi</h3>
+            <p>Raça: Laranjinha</p>
+            <p>Idade: 3 meses</p>
+            <button onclick="adotar('Mimi')">Quero Adotar</button>
+            <button class="interest-btn">Tenho interesse</button>
+        </div>
+    </section>
+
+    <!-- Modal do formulário -->
+<div id="interestModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Formulário de Interesse</h2>
+      <form id="interestForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" required>
+  
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required>
+  
+        <label for="message">Mensagem:</label>
+        <textarea id="message" rows="4" required></textarea>
+  
+        <button type="submit">Enviar Interesse</button>
+      </form>
+    </div>
+  </div>
+  
+
+    <footer>
+        <p>Entre em contato: adote@pets.com | Tel: (91) 99316-7291</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
